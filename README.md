@@ -18,9 +18,8 @@ You can add links under categories like **YouTube, Instagram, WhatsApp, X (Twitt
 
 ## 🚀 Tech Stack
 
-- **Frontend**: React + Vite / Next.js  
-- **Styling**: CSS with gradients, responsive layout  
-- **Database**: Firebase Firestore (for storing links & categories)  
+- **Frontend**: React/ Next.js  
+- **Styling**: CSS with gradients
 
 ---
 
