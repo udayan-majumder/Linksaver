@@ -23,12 +23,12 @@ export const AddLinkCards= ({selectedCatgeory,linkDB,setlinksDB,setIsCard})=>{
             }}>Save</button>
             </div>
             <div className="Links-show-div">
-               {linkDB?.map((items)=>(
-               items?.type === selectedCatgeory ? <a href={items?.link} target="_blank">
+               {linkDB?.map((items,index)=>(
+               items?.type === selectedCatgeory ? <a href={items?.link} target="_blank" key={index}>
                 {items?.topicname}
                </a> : null
                ))}
-               
+
             </div>
             <div className="Close-LinkCard">
                 <button onClick={()=>setIsCard(false)} >Close</button>

@@ -38,8 +38,8 @@ export default function Home() {
             <AddLinkCards selectedCatgeory={SelectedCategory} linkDB={LinksDB} setIsCard={setisCard} setlinksDB={setLinksDB}/>
         ) : (
           <div className="Categories-div">
-            {Categories?.map((items) => (
-              <div className="Category-cards-div">
+            {Categories?.map((items,index) => (
+              <div className="Category-cards-div" key={index}>
                   <button className="Category-cards" onClick={()=>{
                     setSelectedCategory(items)
                     setisCard(true)
